@@ -1,0 +1,12 @@
+.description-container {
+}
+
+.description-text {
+    position: absolute;
+}
+
+.description-container:hover .description-text {
+    left: 10%;
+    cursor: pointer;
+    background: rgba(0, 229, 229, .5);
+}
