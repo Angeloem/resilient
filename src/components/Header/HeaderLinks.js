@@ -34,7 +34,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            // href="https://twitter.com/emansalighty"
+            href="https://twitter.com/VoicesResilient"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -43,6 +43,7 @@ export default function HeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem>
+      {/*
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
@@ -59,7 +60,7 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + " fab fa-facebook"} />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem>*/}
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
@@ -69,7 +70,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            // href="https://www.instagram.com/pemachelelm"
+            href="https://www.instagram.com/resilient_voices_foundation/"
             target="_blank"
             className={classes.navLink}
           >

@@ -20,12 +20,14 @@ export function ContactUs() {
       icon: "fab fa-instagram",
       title: "Instagram",
       content: "resilient_voices_foundation",
+      url: "https://www.instagram.com/resilient_voices_foundation/"
     },
-    // {
-    //   icon: "fab fa-twitter",
-    //   title: "Twitter",
-    //   content: "marginalcharter@gmail.com",
-    // },
+    {
+      icon: "fab fa-twitter",
+      title: "Twitter",
+      content: "@VoicesResilient",
+      url: "https://twitter.com/VoicesResilient"
+    },
     // {
     //   icon: "fab fa-facebook",
     //   title: "Facebook",
@@ -38,7 +40,8 @@ export function ContactUs() {
         return (
           // eslint-disable-next-line react/jsx-key
           <li className={`container`}>
-            <div
+            <a href={value.url} target={'_blank'} className={`url`}>
+              <div
               style={{
                 display: "flex",
                 columnGap: "10px",
@@ -56,6 +59,7 @@ export function ContactUs() {
               <div>{value.title}</div>
             </div>
             <div>{value.content}</div>
+            </a>
           </li>
         );
       })}

@@ -15,6 +15,16 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const useStyles = makeStyles(styles);
 
+function getPhoneNumber(name) {
+    if (name === "Jordan Richard") {
+        return '0766060527'
+    } else if (name === "Nourah Ahmed Seif") {
+        return '0714226622'
+    } else if (name === "Mtegeki Richard Buto") {
+        return '0753303132'
+    }
+}
+
 export default function TeamSection({
   // eslint-disable-next-line react/prop-types
   imageNames = [
@@ -124,7 +134,7 @@ export default function TeamSection({
                   onClick={showNumber}
                   styles={{ marginLeft: "10px" }}
                 >
-                  <div style={{ marginLeft: "50px" }}>{"0756009008"}</div>
+                  <div style={{ marginLeft: "50px" }}>{getPhoneNumber(nameOf)}</div>
                 </Button>
               ) : (
                 <Button

@@ -15,6 +15,9 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
+import { Link } from "react-router-dom";
+
+import "./css/headers.css";
 
 const useStyles = makeStyles(styles);
 
@@ -58,7 +61,7 @@ export default function Header(props) {
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
-    [classes.fixed]: fixed
+    [classes.fixed]: fixed,
   });
   const brandComponent = <Button className={classes.title}>{brand}</Button>;
   return (
@@ -71,7 +74,21 @@ export default function Header(props) {
               {leftLinks}
             </Hidden>
           ) : (
-            brandComponent
+            <div>
+              {/*<Button className={classes.title}>Gallery</Button>
+              <Button className={classes.title}>Members</Button>
+              <Button className={classes.title}>About us</Button>*/}
+              <Link to={`/members`} className={`link`}>
+                Members
+              </Link>
+              <Link to={"/gallery"} className={`link`}>
+                {" "}
+                Gallery{" "}
+              </Link>
+              <Link to={"/about"} className={`link`}>
+                About us
+              </Link>
+            </div>
           )}
         </div>
         <Hidden smDown implementation="css">
@@ -93,7 +110,7 @@ export default function Header(props) {
           anchor={"right"}
           open={mobileOpen}
           classes={{
-            paper: classes.drawerPaper
+            paper: classes.drawerPaper,
           }}
           onClose={handleDrawerToggle}
         >
@@ -108,7 +125,7 @@ export default function Header(props) {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: "white",
 };
 
 Header.propTypes = {
@@ -121,7 +138,7 @@ Header.propTypes = {
     "transparent",
     "white",
     "rose",
-    "dark"
+    "dark",
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
@@ -130,7 +147,7 @@ Header.propTypes = {
   absolute: PropTypes.bool,
   // this will cause the sidebar to change the color from
   // props.color (see above) to changeColorOnScroll.color
-  // when the window.pageYOffset is heigher or equal to
+  // when the window.pageYOffset is higher or equal to
   // changeColorOnScroll.height and then when it is smaller than
   // changeColorOnScroll.height change it back to
   // props.color (see above)
@@ -145,7 +162,7 @@ Header.propTypes = {
       "transparent",
       "white",
       "rose",
-      "dark"
-    ]).isRequired
-  })
+      "dark",
+    ]).isRequired,
+  }),
 };

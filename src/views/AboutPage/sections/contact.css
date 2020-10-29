@@ -5,3 +5,27 @@
 .container {
     margin: 5px 0;
 }
+
+.url {
+    color: black;
+}
+
+/* unvisited link */
+.url:link {
+  color: black;
+}
+
+/* visited link */
+.url:visited {
+  color: black;
+}
+
+/* mouse over link */
+.url:hover {
+  color: black;
+}
+
+/* selected link */
+.url:active {
+  color: black;
+}

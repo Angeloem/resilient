@@ -34,20 +34,20 @@ export default function Footer(props) {
                 <div className={classes.left}>
                     <List className={classes.list}>
                         <ListItem className={classes.inlineBlock}>
-                            <a
-                                href={'/'}
+                            <Link
+                                to={'/'}
                                 className={classes.block}
                             >
                                 Resilient Voices Foundation
-                            </a>
+                            </Link>
                         </ListItem>
-                        <ListItem className={classes.inlineBlock}>
-                            <a
-                                href={`/members`}
+                        {/*<ListItem className={classes.inlineBlock}>
+                            <Link
+                                to={`/members`}
                                 className={classes.block}
                             >
                                 Members
-                            </a>
+                            </Link>
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
                             <a
@@ -56,12 +56,13 @@ export default function Footer(props) {
                             >
                                 Gallery
                             </a>
+                            <Link to={'/gallery'} className={classes.block}> Gallery </Link>
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
-                            <a href={"/about"} className={classes.block}>
+                            <Link to={"/about"} className={classes.block}>
                                 About us
-                            </a>
-                        </ListItem>
+                            </Link>
+                        </ListItem>*/}
                     </List>
                 </div>
             </div>

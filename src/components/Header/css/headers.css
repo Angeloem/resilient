@@ -1,0 +1,15 @@
+.link {
+    margin-right: 10px;
+}
+.link:hover {
+    text-decoration: none;
+    color: black;
+}
+.link:active {
+    text-decoration: none;
+    color: inherit;
+}
+.link:visited {
+    text-decoration: none;
+    color: inherit;
+}

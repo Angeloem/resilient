@@ -28,14 +28,14 @@ const styles = {
   },
 };
 
-export default function LoginPage() {
+export default function _ProfilePage() {
   const classes = useStyles();
   const leaders = [
     {
       image: team1,
       name: "Jordan Richard",
       text: "Chairperson",
-      description: "Describing some chairperson here here",
+      description: "",
       links: [
         {
           name: "fab fa-twitter",
@@ -43,7 +43,7 @@ export default function LoginPage() {
         },
         {
           name: "fab fa-instagram",
-          link: "https://www.instagram.com/jordan_buto/",
+          link: "https://www.instagram.com/jordan_richiy/",
         },
       ],
     },
@@ -51,14 +51,14 @@ export default function LoginPage() {
       image: team2,
       name: "Nourah Ahmed Seif",
       text: "Secretary",
-      description: "Describing some secretary here here",
+      description: "",
       links: [],
     },
     {
       image: team3,
       name: "Mtegeki Richard Buto",
       text: "Accountant",
-      description: "Describing some secretary here here",
+      description: "",
       links: [
         {
           name: "fab fa-instagram",
